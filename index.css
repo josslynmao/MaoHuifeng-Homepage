@@ -45,9 +45,20 @@ a{
 
 @keyframes dinasour
 {
-0% {background-image: url('dinasour.svg'); background-repeat: no-repeat;background-size: 500px 500px;}
-50% {background-image: url('dinasour2.svg');background-repeat: no-repeat;background-size: 500px 500px;}
-100% {background-image: url('dinasour.svg');background-repeat: no-repeat;background-size: 500px 500px;}
+	0% {
+		background-image: url('dinasour.svg'); 
+		background-repeat: no-repeat;
+		background-size: 500px 500px;
+	}
+	50% {
+		background-image: url('dinasour2.svg');
+		background-repeat: no-repeat;
+		background-size: 500px 500px;}
+	100% {
+		background-image: url('dinasour.svg');
+		background-repeat: no-repeat;
+		background-size: 500px 500px;
+	}
 }
 
 
@@ -55,6 +66,7 @@ a{
 	height: 600px;
 	width: 600px;
 	animation: dinasour 1s infinite;
+	-webkit-animation: dinasour 1s infinite;
 	position: absolute;
 	top: 100px;
 	left: 40px;
