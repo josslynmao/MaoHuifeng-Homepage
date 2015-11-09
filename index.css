@@ -1,0 +1,61 @@
+
+body{
+	margin: 0px;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+#banner {
+	margin: 0px;
+	height: 100px;
+	width: 0px;
+	border-top: 0px solid transparent;
+	border-bottom: 100px solid transparent;
+	border-right: 1280px solid #FFE928;
+}
+
+#header{
+	position: absolute;
+	left: 816px;
+	top: 110px;
+	font-size: 20px;
+}
+
+#content{
+	height: 300px;
+}
+
+#dinasour{
+	width: 45%;
+	position:absolute;
+	top: 100px;
+	left: 30px;
+}
+
+#footer{
+	height: 0px;
+	width: 0px;
+	border-top: 50px solid transparent;
+	border-bottom: 150px solid transparent;
+	border-left: 1000px solid #FFE928;
+}
+
+@keyframes dinasour
+{
+0% {background-image: url('dinasour.svg'); background-repeat: no-repeat;background-size: 500px 500px;}
+50% {background-image: url('dinasour2.svg');background-repeat: no-repeat;background-size: 500px 500px;}
+100% {background-image: url('dinasour.svg');background-repeat: no-repeat;background-size: 500px 500px;}
+}
+
+
+.animation{
+	height: 600px;
+	width: 600px;
+	animation: dinasour 1s infinite;
+	position: absolute;
+	top: 100px;
+	left: 40px;
+}
