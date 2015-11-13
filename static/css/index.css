@@ -1,0 +1,141 @@
+
+@font-face{
+	font-family: DJB;
+	src: url('../../source/font/DJB Jenna.ttf');
+}
+
+@font-face{
+	font-family: Bubble;
+	src: url('../../source/font/MeltingRecords.ttf');
+}
+
+body{
+	margin: 0px;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+#banner {
+	margin: 0px;
+	height: 70px;
+	width: 0px;
+	border-top: 0px solid transparent;
+	border-bottom: 100px solid transparent;
+	border-right: 1280px solid #FFE928;
+}
+
+#header{
+	font-family: DJB;
+	font-size: 26px;
+	position: absolute;
+	left: 780px;
+	top: 90px;
+	letter-spacing: 2px;
+}
+
+#content{
+	height: 270px;
+}
+
+#footer{
+	height: 0px;
+	width: 0px;
+	border-top: 50px solid transparent;
+	border-bottom: 150px solid transparent;
+	border-left: 1000px solid #4EACFF;
+}
+
+#links{
+	width:100%;
+	padding-top: 3px;
+	padding-right: 3px;
+	text-align: right;
+	color: grey;
+	font-size: 13px;
+	border-top: 2px solid grey;
+}
+
+#links>a{
+	color: grey;
+	font-size: 13px;
+}
+
+@keyframes dinasour
+{
+	0% {
+		background-image: url('../../source/img/dinasour.svg'); 
+		background-repeat: no-repeat;
+		background-size: 500px 500px;
+	}
+	50% {
+		background-image: url('../../source/img/dinasour2.svg');
+		background-repeat: no-repeat;
+		background-size: 500px 500px;}
+	100% {
+		background-image: url('../../source/img/dinasour.svg');
+		background-repeat: no-repeat;
+		background-size: 500px 500px;
+	}
+}
+
+
+.animation{
+	height: 600px;
+	width: 600px;
+	animation: dinasour 1s infinite;
+	-webkit-animation: dinasour 1s infinite;
+	position: absolute;
+	top: 30px;
+	left: 60px;
+}
+
+#property{
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+.title1{
+	font-family: Bubble;
+	font-size: 120px;
+	padding-right: 30px;
+	position: absolute;
+	top: 235px;
+	left: 650px;
+}
+
+
+.title2{
+	font-family: Bubble;
+	font-size: 50px;
+	padding-right: 30px;
+	position:absolute;
+	top: 385px;
+	left: 800px;
+}
+
+@keyframes tremble
+{
+	0% {
+		transform:rotate(-20deg);
+		-webkit-transform:rotate(-20deg);
+	}
+	50% {
+		transform:rotate(20deg);
+		-webkit-transform:rotate(20deg);
+	}
+	100% {
+		transform:rotate(-20deg);
+		-webkit-transform:rotate(-20deg);
+	}
+}
+
+.rotate{
+	animation:tremble 2s infinite;
+}
+
+a:hover{
+	text-decoration: underline;
+}

@@ -1,4 +1,14 @@
 
+@font-face{
+	font-family: DJB;
+	src: url('../../source/font/DJB Jenna.ttf');
+}
+
+@font-face{
+	font-family: Bubble;
+	src: url('../../source/font/MeltingRecords.ttf');
+}
+
 body{
 	margin: 0px;
 }
@@ -18,10 +28,12 @@ a{
 }
 
 #header{
+	font-family: DJB;
+	font-size: 26px;
 	position: absolute;
-	left: 816px;
+	left: 780px;
 	top: 90px;
-	font-size: 20px;
+	letter-spacing: 2px;
 }
 
 #content{
@@ -54,16 +66,16 @@ a{
 @keyframes dinasour
 {
 	0% {
-		background-image: url('dinasour.svg'); 
+		background-image: url('../../source/img/dinasour.svg'); 
 		background-repeat: no-repeat;
 		background-size: 500px 500px;
 	}
 	50% {
-		background-image: url('dinasour2.svg');
+		background-image: url('../../source/img/dinasour2.svg');
 		background-repeat: no-repeat;
 		background-size: 500px 500px;}
 	100% {
-		background-image: url('dinasour.svg');
+		background-image: url('../../source/img/dinasour.svg');
 		background-repeat: no-repeat;
 		background-size: 500px 500px;
 	}
@@ -85,3 +97,24 @@ a{
 	margin-bottom: 5px;
 }
 
+.title1{
+	font-family: Bubble;
+	font-size: 120px;
+	padding-right: 30px;
+	position:absolute;
+	top: 200px;
+	left: 650px;
+}
+
+.title2{
+	font-family: Bubble;
+	font-size: 50px;
+	padding-right: 30px;
+	position:absolute;
+	top: 355px;
+	left: 800px;
+}
+
+a:hover{
+	text-decoration: underline;
+}
