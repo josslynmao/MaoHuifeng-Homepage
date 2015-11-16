@@ -97,43 +97,30 @@ a{
 	margin-bottom: 5px;
 }
 
-.title1{
-	font-family: Bubble;
-	font-size: 120px;
-	padding-right: 30px;
+@keyframes type{
+	from{width: 0px;}
+}
+
+@keyframes blink{
+	50%{border-color: transparent;}
+}
+
+.title{
+	font: bold 200% Consolas, Monaco, monospace;
+	border-right: .1em solid;
+	width: 16.5em; /* fallback */
+	width: 30ch; /* # of chars */
+	margin: 2em 1em;
+	white-space: nowrap;
+	overflow: hidden;
 	position: absolute;
 	top: 235px;
 	left: 650px;
-}
-
-
-.title2{
-	font-family: Bubble;
-	font-size: 50px;
-	padding-right: 30px;
-	position:absolute;
-	top: 385px;
-	left: 800px;
-}
-
-@keyframes tremble
-{
-	0% {
-		transform:rotate(-20deg);
-		-webkit-transform:rotate(-20deg);
-	}
-	50% {
-		transform:rotate(20deg);
-		-webkit-transform:rotate(20deg);
-	}
-	100% {
-		transform:rotate(-20deg);
-		-webkit-transform:rotate(-20deg);
-	}
-}
-
-.rotate{
-	animation:tremble 2s infinite;
+	border-right: 2px solid black;
+	width: 14ch;
+	overflow: hidden;
+	animation: type 10s steps(14, end), 
+	           blink .5s step-end infinite alternate;
 }
 
 a:hover{
