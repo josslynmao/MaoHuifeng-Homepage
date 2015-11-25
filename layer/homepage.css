@@ -4,10 +4,21 @@ body{
 	font-family: helvetica;
 }
 
-#content{}
+a{
+	text-decoration: none;
+	color: white;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+#content{
+}
 
 .block{
-	border: 3px solid white;
-	height: 100%;
-	width: 100%;
+	border: 10px solid white;
+	border-radius: 10px;
+	line-height: 2em;
+	margin: 10px;
 }
