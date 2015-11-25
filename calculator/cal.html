@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF-8">
+	<title>My Calculator</title>
+	<link type="text/css" rel="stylesheet" href="cal.css"/>
+	<script src="jquery.min.js"></script>
+</head>
+<body>
+	<div id="conventer" >
+		<form id="panel">
+			<input name="numScreen" value="0" id="blank"/>
+			<li onclick="allClear()"></br>AC</li>
+			<li onclick="reverse()"></br>+/-</li>
+		    <li onclick="percentage()"></br>%</li>
+		    <li onclick="devide()"></br>/</li>
+		    <li onclick="show(7)"></br>7</li>
+		    <li onclick="show(8)"></br>8</li>
+		    <li onclick="show(9)"></br>9</li>
+		    <li onclick="times()"></br>*</li>
+		    <li onclick="show(4)"></br>4</li>
+		    <li onclick="show(5)"></br>5</li>
+		    <li onclick="show(6)"></br>6</li>
+		    <li onclick="minus()"></br>-</li>
+		    <li onclick="show(1)"></br>1</li>
+		    <li onclick="show(2)"></br>2</li>
+		    <li onclick="show(3)"></br>3</li>
+		    <li onclick="plus()"></br>+</li>
+		    <li class="width" onclick="show(0)"></br>0</li>
+		    <li onclick="show('.')"></br>.</li>
+		    <li onclick="equal()"></br>=</li>
+		</form>
+		<div class="snowbg" id="note">
+				<img class="pic" src="img/麋鹿.png" alt="麋鹿"/>
+		</div>
+		<div class="tips">Jingle bells,jingle bells~Jingle all the way~</div>
+	</div>
+	 <embed src="http://www.kuwo.cn/yinyue/6689870/" hidden="true" autostart="true" loop="true">
+
+	<script language="javascript" src="cal.js"> </script> 
+	<script>
+	$(function(){
+		var d="<div class='snow'>❅<div>"
+		setInterval(function(){
+			var f=$(document).width();
+			var e=Math.random()*f-100;
+			var o=0.3+Math.random();
+			var fon=10+Math.random()*30;
+			var l = e - 100 + 200 * Math.random();
+			var k=2000 + 5000 * Math.random();
+			$(d).clone().appendTo(".snowbg").css({
+				left:e+"px",
+				opacity:o,
+				"font-size":fon,
+			}).animate({
+				top:"400px",
+				left:l+"px",
+				opacity:0.1,
+			},k,"linear",function(){$(this).remove()})
+		},200)
+	})
+	</script>
+</body>
+</html>
