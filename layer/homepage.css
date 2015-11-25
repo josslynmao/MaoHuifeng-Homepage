@@ -6,6 +6,6 @@ body{
 
 #content{}
 
-#blog{}
-
-#workshop{}
+.block{
+	border: 3px solid white;
+}
