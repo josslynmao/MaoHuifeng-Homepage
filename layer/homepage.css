@@ -16,8 +16,8 @@ a:hover{
 #content{
 	display: float;
   float: right;
-  width: 65em;
-  height: 43em;
+  width: 70%;
+  height: 40em;
 }
 
 iframe{
@@ -62,10 +62,11 @@ iframe{
   display: float;
   float:left;
   position: relative;
-  top: 10em;
-  left: 5em;
+  top: 30em;
+  left: 3em;
   font-size: 1em;
 }
+
 .sheep * {
   transition: transform 0.3s;
 }
