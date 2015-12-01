@@ -1,0 +1,115 @@
+body{
+	background-color: #C0F5FF;
+}
+
+a{
+	text-decoration: none;
+	color: #FD6CA3;
+}
+
+img{
+	box-shadow: 5px 5px #e2e2e2;
+	height: 30%;
+	width: 30%;
+	margin: 35px;
+}
+
+h6{
+	color: #91D5FF;
+}
+
+#cloud{
+	display: float;
+	float: left;
+	width: 240px;
+    height: 150px;
+    position: relative;
+    margin: 20px;
+    -webkit-animation: 'float' 3s infinite;
+}
+
+#cloud *{
+	position:absolute;
+	background-color: white;
+	border-radius: 50%;
+	box-shadow: 0px 8px 0px #CCCCCC; 
+}
+
+#cloud .circle1{
+	height: 128px;
+	width: 128px;
+	left: 60px;
+	top: 0px;
+}
+
+#cloud .circle2{
+	height: 84px;
+	width: 84px;
+	left: 20px;
+	top: 44px;
+}
+
+#cloud .circle3{
+	height: 64px;
+	width: 64px;
+	left: 155px;
+	top: 64px;
+}
+
+#cloud .rectangle{
+	height :42px;
+	width: 125px;
+	left: 62px;
+	top: 86px;
+	border-radius: 0px;
+}
+
+@-webkit-keyframes float{
+	0%{ margin-left: 40px;}
+	50%{ margin-left: 100px;}
+	100%{ margin-left: 40px;}
+}
+
+.code{
+	font-family: Helvetica;
+	background-color: white;
+	color: #91D5FF;
+	font-size: 22px;
+}
+
+.instruction{
+	padding: 20px;
+	margin-top: 20px;
+	margin-right:20px;
+	display: float;
+	float: right;
+	background-color: white;
+	width: 50%;
+	border-radius: 10px;
+	box-shadow: 10px 10px #e2e2e2;
+	color: #FD6CA3;
+	font-size: 2em;
+	font-family: Beauty;
+}
+
+#codestyle{
+	padding: 5px 0px 5px 20px;
+	width: 100%;
+	border: transparent;
+	border-radius: 10px;
+	font-size: 16px;
+	font-family: Helvetica;
+	color: #FD6CA3;
+	line-height: 1.5em;
+}
+
+.button{
+	font-family: Helvetica;
+	font-size: 16px;
+	border-radius: 10px;
+	text-align: center;
+	text-shadow:none;
+	width: 20em;
+	border: 2px solid #FD6CA3;
+	padding: 10px;
+}

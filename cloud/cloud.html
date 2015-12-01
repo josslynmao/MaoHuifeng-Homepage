@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cloud</title>
+	<link rel="stylesheet" href="cloud.css">
+	<script src="jquery.js"></script>
+</head>
+<body>
+	<div id="cloud">
+		<div class="circle1"></div>
+		<div class="circle2"></div>
+		<div class="circle3"></div>
+		<div class="rectangle"></div>
+	</div>
+	<div class="instruction">
+		<h4>CSS3 Animation : The Floating Cloud</h4>
+		<h6>I  leave  softly,  gently,</h6>
+		<h6>Exactly  as  I  came.</h6>
+		<h6>I  wave  to  the  western  sky,</h6>
+		<h6>Telling  it  goodbye  softly,  gently.</h6>
+		<br/>
+	<div class="code">
+		<span>HTML:</span>
+		<textarea disabled="disabled" id="codestyle" cols="30" rows="18">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cloud</title>
+	<link rel="stylesheet" href="cloud.css">
+</head>
+<body>
+	<div id="cloud">
+		<div class="circle1"></div>
+		<div class="circle2"></div>
+		<div class="circle3"></div>
+		<div class="rectangle"></div>
+	</div>
+</body>
+</html>
+		</textarea>
+		<span>CSS:</span>
+		<textarea disabled="disabled" id="codestyle" cols="30" rows="59">
+
+body{
+	background-color: #C0F5FF;
+}
+
+#cloud{
+	display: float;
+	float: left;
+	width: 240px;
+    height: 150px;
+    position: relative;
+    margin: 20px;
+    -webkit-animation: 'float' 3s infinite;
+}
+
+#cloud *{
+	position:absolute;
+	background-color: white;
+	border-radius: 50%;
+	box-shadow: 0px 8px 0px #CCCCCC; 
+}
+
+#cloud .circle1{
+	height: 128px;
+	width: 128px;
+	left: 60px;
+	top: 0px;
+}
+
+#cloud .circle2{
+	height: 84px;
+	width: 84px;
+	left: 20px;
+	top: 44px;
+}
+
+#cloud .circle3{
+	height: 64px;
+	width: 64px;
+	left: 155px;
+	top: 64px;
+}
+
+#cloud .rectangle{
+	height :42px;
+	width: 125px;
+	left: 62px;
+	top: 86px;
+	border-radius: 0px;
+}
+
+@-webkit-keyframes float{
+	0%{ margin-left: 40px;}
+	50%{ margin-left: 100px;}
+	100%{ margin-left: 40px;}
+}
+		</textarea>
+	</div>
+		<div class="button"><a href="#">👇Click to read source code</a></div>
+	</div>
+	<img src="draft.jpg"/>
+	<script src="cloud.js"></script>
+</body>
+</html>
