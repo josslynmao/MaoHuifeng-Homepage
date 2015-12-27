@@ -25,3 +25,7 @@ a:hover{
 	line-height: 2em;
 	margin: 10px;
 }
+
+ul{
+	list-style: none;
+}
