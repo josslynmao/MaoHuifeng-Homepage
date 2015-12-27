@@ -1,0 +1,35 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+img{
+	width: 250px;
+	height: auto;
+}
+
+body{
+	display: none;
+}
+
+#banner{
+	font-size: 100px;
+}
+
+#container{
+
+	height: 100%;
+}
+
+.picbox{
+	display: float;
+	float: left;
+}
+
+.pic{
+	margin: 10px;
+	padding: 5px;
+	border: 2px solid grey;
+	border-radius: 10px;
+}
+
