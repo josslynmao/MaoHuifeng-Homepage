@@ -1,0 +1,148 @@
+body
+{
+  margin: 0;
+  font-family: arial;
+}
+
+#container{
+  height: auto;
+  width: auto;
+}
+
+#header{
+  background-image: url('images/header.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 340px;
+}
+
+#content{
+  background-image: url('images/background.jpg');
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.table{
+  background-color: white;
+  width: 900px;
+  height: auto;/*全部写完表单后这里置为auto*/
+  padding: 5px;
+}
+
+.box{
+  margin-left: auto;
+  margin-right: auto;
+  width: 732px;
+  height: auto;
+}
+
+.box .number,.seatingStyle,.size,.stageStyle{
+  display: float;
+  float: left;
+  width: 700px;
+  height: auto;
+  padding: 0px;
+  margin: 10px;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+}
+
+.number .select{
+  height: 90px;
+  width: auto;
+  line-height: 90px;
+}
+
+.intro h1{
+  text-align: center;
+}
+
+.intro p{
+  text-align: center;
+  line-height: 30px;
+}
+
+.imagebox{
+  display: float;
+  float: left;
+  width: 200px;
+  height: 300;
+  margin: 25px 15px 5px 15px;
+  font-size: 13px;
+}
+
+.imagebox img{
+  width: 200px;
+}
+
+.sizebox{
+  width: 60x;
+  margin-left: 5px;
+  display: folat;
+  float: left;
+  padding-bottom: 10px;
+}
+
+.sizebox .picsize{
+  width: 50px;
+  height: 70px;
+}
+
+.sizebox img{
+  width:50px;
+}
+
+.stagebox{
+  width: 150x;
+  height: auto;
+  margin: 10px;
+  display: folat;
+  float: left;
+}
+
+.stagebox img{
+  width: 150px;
+}
+
+.stagebox .picsize{
+  width: 150px;
+  height: 120px;
+}
+
+.seatingStyle>span,.number>span,.size>span,.stageStyle>span{
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  width: auto;
+  background: -webkit-linear-gradient(top, #cccccc, #ffffff);
+}
+
+.button{
+  border: 1px solid #f0542d;
+  color: #f0542d;
+  font-size: 13px;
+  margin: 10px;
+  padding: 0px 5px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  width: auto;
+  display: float;
+  float: left;
+}
+
+.submit{
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: auto;
+}
+
+#footer{
+  background-image: url('images/footer.jpg');
+  height: 500px;
+  background-size: cover;
+}
